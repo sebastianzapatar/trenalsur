@@ -89,6 +89,29 @@ public class ListaLigada<T> {
         head=null;
         tail=null;
     }
-    //Devolver un elemento de la posicion k
-
+    //todo Devolver un elemento de la posicion k
+    public Node<T> getNode(int index){
+        if(index==0){
+            return head;
+        }
+        if(index==size-1){
+            return tail;
+        }
+        if(index<size-1){
+            Node<T> temp=head;
+            for(int i=0;i<index;i++){
+                temp=temp.next;
+            }
+            return temp;
+        }
+        else{
+            throw new IndexOutOfBoundsException("Index out of bounds");
+        }
+    }
+    //todo rotar
+    //10->20->30->40
+    //rotar 2
+    //30->40->10->20
+    //rotar 3
+    //40->10->20->30
 }
