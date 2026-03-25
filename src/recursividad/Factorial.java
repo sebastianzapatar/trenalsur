@@ -51,4 +51,12 @@ public class Factorial {
         hanio(n-1,auxiliar,origen,destino);
 
     }
+    public static int sumaVect(int[] v){
+        return sumaVecRecursivo(v,0);
+    }
+    private static int sumaVecRecursivo(int[] v, int i){
+        if(i==v.length) return 0;
+        else
+            return v[i]+sumaVecRecursivo(v,i+1);
+    }
 }
