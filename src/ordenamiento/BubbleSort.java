@@ -32,18 +32,19 @@ public class BubbleSort {
         }
     }
     public static void main(String[] args) {
-        Estudiante[] estudiantes = new Estudiante[4];
-        Estudiante e1=new Estudiante("JJ F",5);
-        Estudiante e2=new Estudiante("T G",4);
-        Estudiante e3=new Estudiante("A S",4);
-        Estudiante e4=new Estudiante("M C",1);
-        estudiantes[0]=e1;
-        estudiantes[1]=e2;
-        estudiantes[2]=e3;
-        estudiantes[3]=e4;
-        bubbleSort2(estudiantes);
-        for(int j = 0; j < estudiantes.length; j++) {
-            System.out.println(estudiantes[j]);
-        }
+        Persona[] personas = new Persona[4];
+        Persona p1=new Persona("Valeria P",
+                19,"No gracias");
+        Persona p2=new Persona("Sebastian Z",
+                37,"Si por favor :(");
+        Persona p3=new Persona("Alejo U",18,
+                "Si por favor");
+        Persona p4=new Persona("Pablo E",20
+        ,"Bueno");
+        personas[0]=p1;
+        personas[1]=p2;
+        personas[2]=p3;
+        personas[3]=p4;
+        bubbleSort2(personas);
     }
 }
