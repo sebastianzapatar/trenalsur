@@ -8,10 +8,15 @@ import java.util.*;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        System.out.println(Factorial.factorial(200));
-        System.out.println(Factorial.sumatorial(10));
-        System.out.println(Factorial.potencia(3,4));
-        System.out.println(Factorial.contarDigitos(15678));
-        Factorial.hanio(10,'a','b','c');
+        List<Integer> lista = new LinkedList();
+        lista.add(1);
+        lista.add(2);
+        lista.add(3);
+        lista.add(4);
+        lista.set(2,1500);
+        for (int i = 0; i < lista.size(); i++) {
+            System.out.println(lista.get(i));
+        }
+        System.out.println(lista.toString());
     }
 }
